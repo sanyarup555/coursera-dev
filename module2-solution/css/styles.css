@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+  .menu-title {
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .all-items {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .item {
+    background-color: whitesmoke;
+    padding: 40px 20px 20px 20px;
+    outline: 1px black solid;
+    position: relative;
+  }
+
+  .item-title {
+    color: white;
+    padding: 5px 10px 5px 10px;
+    outline: 1px black solid;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .item.a > .item-title {
+    background-color: deeppink;
+  }
+
+  .item.b > .item-title {
+    background-color: darkred;
+  }
+
+  .item.c > .item-title {
+    background-color: darkmagenta;
+  }
+
+    /* Desktop */
+    @media (min-width: 992px){
+        .item {
+            float: left;
+            width: calc(calc(100% - 20px)/3);
+        }
+        div + div {
+            margin-left: 10px;
+        }
+      }
+      
+  
+    /* Tablet */
+  @media (min-width: 768px) and (max-width: 991px){
+    .item.a {
+        float: left;
+        width: calc(calc(100% - 10px)/2);
+    } 
+    
+    .item.b {
+        float: left;
+        margin-left: 10px;
+        width: calc(calc(100% - 10px)/2);
+    }
+    .item.c {
+        float: left;
+        margin-top: 10px;
+        width: 100%;
+    }
+  }
+  
+  
+    /* Mobile */
+  @media (max-width: 767px){
+    .item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+  }
