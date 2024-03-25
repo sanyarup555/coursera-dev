@@ -1,0 +1,20 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #ee964b;
+    font-family: "Oxygen", sans-serif;
+}
+
+header {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 24px;
+}
+.main-body {
+    height: 1000px;
+    color: #000;
+    background-color: #faf0ca;
+}
